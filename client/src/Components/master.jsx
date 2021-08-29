@@ -4,8 +4,7 @@ import { useParams } from 'react-router-dom';
 const Master = () => {
     const { type } = useParams();
     return (
-        <>
-          {type}
+        <> 
         </>
     );
 };
