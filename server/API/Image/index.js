@@ -16,7 +16,6 @@ const storage = multer.memoryStorage();
 const upload = multer({storage});
 
 
-
 /*
 Route       /
 Des         Uploads given image to S3 bucket,and saves return file link to mongoDB
@@ -30,7 +29,7 @@ Router.post("/", upload.array("file", 4), async(req,res) =>{
 
        //  S3 bucket options 
         const bucketOptions = {
-            Bucket : "",
+            Bucket : "zomato-clone-project",
             Key: file.originalname,
             Body: file.buffer,
             ContentType: file.mimetype,
