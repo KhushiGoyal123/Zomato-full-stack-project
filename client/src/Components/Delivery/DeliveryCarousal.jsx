@@ -60,14 +60,14 @@ const DeliveryCarousal = () => {
       </h1>
       <div className="lg:hidden flex gap-3 lg:gap-0 flex-wrap justify-between">
         {categories.map((food) => (
-          <DeliveryCatagory {...food} />
+          <DeliveryCategory {...food} />
         ))}
       </div>
 
       <div className="hidden lg:block">
         <Slider {...settings}>
           {categories.map((food) => (
-            <DeliveryCatagory {...food} />
+            <DeliveryCategory {...food} />
           ))}
         </Slider>
       </div>
