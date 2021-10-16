@@ -28,7 +28,7 @@ const RestaurantLayout = (props) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getSpecificRestaurant(id)).then((data) => {
+    dispatch (getSpecificRestaurant(id)).then((data) => {
       setRestaurant((prev) => ({
         ...prev,
         ...data.payload.restaurant,
